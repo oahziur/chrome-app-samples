@@ -5,6 +5,12 @@ var main = (function() {
   var BODY_SENSOR_LOCATION_UUID     = '00002a38-0000-1000-8000-00805f9b34fb';
   var HEART_RATE_CONTROL_POINT_UUID = '00002a39-0000-1000-8000-00805f9b34fb';
 
+  HEART_RATE_SERVICE_UUID       = '180d';
+  HEART_RATE_MEASUREMENT_UUID   = '2a37';
+  BODY_SENSOR_LOCATION_UUID     = '2a38';
+  HEART_RATE_CONTROL_POINT_UUID = '2a39';
+
+
   function HeartRateSensor() {
     // A mapping from device addresses to device names for found devices that
     // expose a Heart Rate service.
