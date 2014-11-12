@@ -8,6 +8,14 @@ var main = (function() {
   var SOFTWARE_REVISION_STRING_UUID = '00002a28-0000-1000-8000-00805f9b34fb';
   var PNP_ID_UUID                   = '00002a50-0000-1000-8000-00805f9b34fb';
 
+  DEVICE_INFO_SERVICE_UUID      = '180a';
+  MANUFACTURER_NAME_STRING_UUID = '2a29';
+  SERIAL_NUMBER_STRING_UUID     = '2a25';
+  HARDWARE_REVISION_STRING_UUID = '2a27';
+  FIRMWARE_REVISION_STRING_UUID = '2a26';
+  SOFTWARE_REVISION_STRING_UUID = '2a28';
+  PNP_ID_UUID                   = '2a50';
+
   function DeviceInfoDemo() {
     // A mapping from device addresses to device names for found devices that
     // expose a Battery service.
