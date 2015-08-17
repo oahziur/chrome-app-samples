@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <script>
+      console.log('tested');
+      window.onbeforeunload = function(e) {
+      console.log('before unload event called');
+      return 'test';
+      }
+    </script>
+  </head>
+  <body>
+    Test Page
+  </body>
+</html>

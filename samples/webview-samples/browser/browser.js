@@ -95,7 +95,11 @@ onload = function() {
   webview.addEventListener('loadabort', handleLoadAbort);
   webview.addEventListener('loadredirect', handleLoadRedirect);
   webview.addEventListener('loadcommit', handleLoadCommit);
+  webview.addEventListener('consolemessage', function(e) {
+    console.log('Guest page logged a message: ', e.message);
+  });
 
+  
   // Test for the presence of the experimental <webview> zoom and find APIs.
   if (typeof(webview.setZoom) == "function" &&
       typeof(webview.find) == "function") {
